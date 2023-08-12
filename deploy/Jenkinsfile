@@ -41,7 +41,9 @@ pipeline {
             // always {
             //     echo "Docker build success!"
             // }
-            echo "Post stage"
+            always {
+                echo "Post stage"
+            }
         }
     }
     stage('============ Run test code ============') {
